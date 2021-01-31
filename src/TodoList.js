@@ -8,9 +8,9 @@ export default function todoList({todoList, visibleFilter}){
         if(visibleFilter === "all"){
             return todoItem
         }else if(visibleFilter === "completed"){
-            return todoItem.COMPLETE == true 
+            return todoItem.COMPLETE === true 
         }else{
-            return todoItem.COMPLETE == false
+            return todoItem.COMPLETE === false
         }
     })
 
